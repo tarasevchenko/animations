@@ -35,7 +35,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="anumtionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yI-8w-DsT"/>
+                                    <action selector="animationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUQ-uI-F44"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dd-dn-3JN">
@@ -49,7 +49,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="layerAnimationButtonTappeeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sh-OW-ePf"/>
+                                    <action selector="layerAnimationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYr-bk-07m"/>
                                 </connections>
                             </button>
                         </subviews>
