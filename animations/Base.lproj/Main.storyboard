@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7K0-Mb-xKL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Нативные-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animations" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="six-jR-ywo">
-                                <rect key="frame" x="100" y="102" width="200" height="200"/>
+                                <rect key="frame" x="100" y="153" width="200" height="200"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="rbz-6w-nk0"/>
@@ -25,7 +25,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF5-aL-sra">
-                                <rect key="frame" x="30" y="702" width="354" height="50"/>
+                                <rect key="frame" x="30" y="653" width="354" height="50"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0QN-CL-FJ8"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dd-dn-3JN">
-                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <rect key="frame" x="30" y="733" width="354" height="50"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Drw-V1-jMH"/>
@@ -59,13 +59,14 @@
                             <constraint firstItem="six-jR-ywo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="4YZ-7d-peg"/>
                             <constraint firstItem="5Dd-dn-3JN" firstAttribute="top" secondItem="gF5-aL-sra" secondAttribute="bottom" constant="30" id="7TE-Ic-LJk"/>
                             <constraint firstItem="gF5-aL-sra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="arS-lP-pa4"/>
-                            <constraint firstItem="gF5-aL-sra" firstAttribute="top" secondItem="six-jR-ywo" secondAttribute="bottom" constant="400" id="d2v-c6-8Hu"/>
+                            <constraint firstItem="gF5-aL-sra" firstAttribute="top" secondItem="six-jR-ywo" secondAttribute="bottom" constant="300" id="d2v-c6-8Hu"/>
                             <constraint firstItem="5Dd-dn-3JN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eDe-WW-Nix"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Dd-dn-3JN" secondAttribute="bottom" constant="30" id="gYA-xH-kbU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Dd-dn-3JN" secondAttribute="trailing" constant="30" id="hM0-Rh-hFq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gF5-aL-sra" secondAttribute="trailing" constant="30" id="kMI-Pt-S0X"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Нативные" id="u5f-sT-JHd"/>
                     <connections>
                         <outlet property="pinkView" destination="six-jR-ywo" id="CuE-7u-k03"/>
                         <outlet property="pinkViewBottomConstraint" destination="d2v-c6-8Hu" id="UB4-uL-gCu"/>
@@ -73,7 +74,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="98"/>
+            <point key="canvasLocation" x="913" y="-240"/>
+        </scene>
+        <!--Lottie-->
+        <scene sceneID="0Wo-mL-7Qo">
+            <objects>
+                <viewController id="arK-hf-6Hh" customClass="LottieViewController" customModule="animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fFS-uZ-hNa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vX-FH-VCb" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="10" y="54" width="394" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="qGw-dS-Be9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugq-lc-5gZ">
+                                <rect key="frame" x="30" y="733" width="354" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rLs-oo-e7V"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Анимация">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="animationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PjR-Cl-9Tb"/>
+                                    <action selector="animationButtonTapped:" destination="arK-hf-6Hh" eventType="touchUpInside" id="sRX-dF-BMO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yFs-Tq-WKR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ugq-lc-5gZ" firstAttribute="leading" secondItem="yFs-Tq-WKR" secondAttribute="leading" constant="30" id="8IJ-9r-uee"/>
+                            <constraint firstItem="yFs-Tq-WKR" firstAttribute="trailing" secondItem="2vX-FH-VCb" secondAttribute="trailing" constant="10" id="UpD-rh-kBN"/>
+                            <constraint firstItem="yFs-Tq-WKR" firstAttribute="trailing" secondItem="ugq-lc-5gZ" secondAttribute="trailing" constant="30" id="c2H-29-QXc"/>
+                            <constraint firstItem="2vX-FH-VCb" firstAttribute="top" secondItem="yFs-Tq-WKR" secondAttribute="top" constant="10" id="nk5-Xv-ttW"/>
+                            <constraint firstItem="2vX-FH-VCb" firstAttribute="leading" secondItem="yFs-Tq-WKR" secondAttribute="leading" constant="10" id="otI-Ty-ep0"/>
+                            <constraint firstItem="yFs-Tq-WKR" firstAttribute="bottom" secondItem="ugq-lc-5gZ" secondAttribute="bottom" constant="30" id="sLi-jp-fdF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lottie" id="Nc7-3I-2yc"/>
+                    <connections>
+                        <outlet property="animationView" destination="2vX-FH-VCb" id="bYK-nH-84v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1TY-Nh-RJp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="480"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="x2I-a7-1vz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7K0-Mb-xKL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pQQ-e8-Kmf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="bmo-HD-itM"/>
+                        <segue destination="arK-hf-6Hh" kind="relationship" relationship="viewControllers" id="mT3-PH-0tq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AB-fs-kMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>

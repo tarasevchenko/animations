@@ -6,5 +6,6 @@ target 'animations' do
   use_frameworks!
 
   # Pods for animations
+  pod 'lottie-ios'
 
 end
