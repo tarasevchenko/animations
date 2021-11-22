@@ -17,6 +17,19 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func layerAnimationButtonTappeeed(_ sender: Any) {
+        UIView.animate(
+            withDuration: 1,
+            animations: { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                self.pinkView.layer.cornerRadius = self.pinkView.bounds.height / 2
+                self.view.layoutIfNeeded()
+            },
+            completion: nil)
+    }
+    
     @IBAction func anumtionButtonTapped(_ sender: Any) {
         UIView.animate(
             withDuration: 3,

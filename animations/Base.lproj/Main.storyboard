@@ -17,14 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="six-jR-ywo">
-                                <rect key="frame" x="100" y="182" width="214" height="200"/>
+                                <rect key="frame" x="100" y="102" width="200" height="200"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="rbz-6w-nk0"/>
                                     <constraint firstAttribute="height" constant="200" id="vbu-ih-gMO"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF5-aL-sra">
-                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <rect key="frame" x="30" y="702" width="354" height="50"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0QN-CL-FJ8"/>
@@ -37,16 +38,32 @@
                                     <action selector="anumtionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yI-8w-DsT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dd-dn-3JN">
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Drw-V1-jMH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Анимация Layer">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="layerAnimationButtonTappeeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sh-OW-ePf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="six-jR-ywo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="4YZ-7d-peg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gF5-aL-sra" secondAttribute="bottom" constant="30" id="S7L-yl-SbT"/>
+                            <constraint firstItem="5Dd-dn-3JN" firstAttribute="top" secondItem="gF5-aL-sra" secondAttribute="bottom" constant="30" id="7TE-Ic-LJk"/>
                             <constraint firstItem="gF5-aL-sra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="arS-lP-pa4"/>
                             <constraint firstItem="gF5-aL-sra" firstAttribute="top" secondItem="six-jR-ywo" secondAttribute="bottom" constant="400" id="d2v-c6-8Hu"/>
+                            <constraint firstItem="5Dd-dn-3JN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eDe-WW-Nix"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Dd-dn-3JN" secondAttribute="bottom" constant="30" id="gYA-xH-kbU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Dd-dn-3JN" secondAttribute="trailing" constant="30" id="hM0-Rh-hFq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gF5-aL-sra" secondAttribute="trailing" constant="30" id="kMI-Pt-S0X"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="six-jR-ywo" secondAttribute="trailing" constant="100" id="zAc-8Y-CbA"/>
                         </constraints>
                     </view>
                     <connections>
