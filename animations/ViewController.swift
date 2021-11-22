@@ -21,10 +21,14 @@ class ViewController: UIViewController {
         UIView.animate(
             withDuration: 3,
             delay: 0,
+            usingSpringWithDamping: 10,
+            initialSpringVelocity: 5,
             options: [],
             
             animations: { [weak self] in
                 self?.pinkViewBottomConstraint.constant = 10
+                self?.scale()
+                self?.rotate()
                 self?.view.layoutIfNeeded()
             },
             completion: nil)
